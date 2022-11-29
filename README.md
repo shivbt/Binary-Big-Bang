@@ -9,33 +9,26 @@ As we all know, computer can understand only binary combinations. If we write
 all possible binary combinations containing `n-bits` in a single column then
 we don't see any pattern. <br/>
 Ex: 3 bit binary numbers <br/>
-|   000    |
+
+| Patterns |
 | -------- |
 |   001    |
-| -------- |
 |   010    |
-| -------- |
 |   011    |
-| -------- |
 |   100    |
-| -------- |
 |   101    |
-| -------- |
 |   110    |
-| -------- |
 |   111    |
-| -------- |
-<br/>
+
 But if we write same `n-bits` binary combinations in following format then we
-start seeing some pattern. Ex: Same 3 bit binary combinations<br/>
+start seeing some pattern.<br/>
+Ex: Same 3 bit binary combinations<br/>
+
 |   0 ones  |   1 ones  |   2 ones  |   3 ones  |
 | --------- | --------- | --------- | --------- |
 |   000     |   001     |   011     |   111     |
-| --------- | --------- | --------- | --------- |
 |           |   010     |   101     |           |
-| --------- | --------- | --------- | --------- |
 |           |   100     |   110     |           |
-| --------- | --------- | --------- | --------- |
 <br/>
 Now this table shows that only 50% patterns are original and rest 50% can be
 derived (complement). Even if see closely then only 25% patterns are original
@@ -44,7 +37,7 @@ and rest 75% can derived.
 ## Idea: Binary Big Bang
 
 We have established that only 25% binary patterns are original. With this it can
-be said that any n bit binary pattern can be represented by `(n / 4)` bit
+be said that any `n bits` binary pattern can be represented by `(n/4) bits`
 patterns (here it is assumed that encoding and decoding can be done in some
 way. **How? (And that is the question to universe. Let's hope it has answer.)**).
 So, we can form some kind of recursive equation here: <br/>
